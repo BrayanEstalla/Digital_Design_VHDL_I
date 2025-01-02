@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Mar  9 10:08:42 2022
+# Process ID: 13936
+# Current directory: C:/Users/usuario/Desktop/CURSO_FPGA/frequency_divider
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12852 C:\Users\usuario\Desktop\CURSO_FPGA\frequency_divider\frequency_divider.xpr
+# Log file: C:/Users/usuario/Desktop/CURSO_FPGA/frequency_divider/vivado.log
+# Journal file: C:/Users/usuario/Desktop/CURSO_FPGA/frequency_divider\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/usuario/Desktop/CURSO_FPGA/frequency_divider/frequency_divider.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/usuario/Desktop/CURSO_FPGA/frequency_divider/frequency_divider.srcs/sources_1/new/freq_div_procedure.vhd w ]
+add_files C:/Users/usuario/Desktop/CURSO_FPGA/frequency_divider/frequency_divider.srcs/sources_1/new/freq_div_procedure.vhd
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top freq_div_procedure [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+update_compile_order -fileset sources_1
+close_design
+synth_design -rtl -name rtl_1
+refresh_design
+close_design
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+close_project
+open_project C:/Users/usuario/Desktop/CURSO_FPGA/frequency_divider/frequency_divider.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/usuario/Desktop/CURSO_FPGA/frequency_divider/frequency_divider.srcs/sources_1/new/freq_div_pkg.vhd w ]
+add_files C:/Users/usuario/Desktop/CURSO_FPGA/frequency_divider/frequency_divider.srcs/sources_1/new/freq_div_pkg.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

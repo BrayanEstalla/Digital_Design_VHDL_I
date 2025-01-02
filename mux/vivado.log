@@ -1,0 +1,540 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 24 01:17:03 2022
+# Process ID: 14540
+# Current directory: C:/Users/usuario/Desktop/CURSO_FPGA/mux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13364 C:\Users\usuario\Desktop\CURSO_FPGA\mux\mux.xpr
+# Log file: C:/Users/usuario/Desktop/CURSO_FPGA/mux/vivado.log
+# Journal file: C:/Users/usuario/Desktop/CURSO_FPGA/mux\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 959.027 ; gain = 34.426
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 24 01:18:05 2022] Launched synth_1...
+Run output will be captured here: C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1054.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 1181.555 ; gain = 222.527
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: mux_2to1_ssas
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1869.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_2to1_ssas' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_2to1_ssas.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'mux_2to1_ssas' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_2to1_ssas.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1869.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1869.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1869.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1881.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1881.250 ; gain = 11.531
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1881.250 ; gain = 11.531
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1895.113 ; gain = 13.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_2to1_ssas' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_2to1_ssas.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'mux_2to1_ssas' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_2to1_ssas.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1920.543 ; gain = 39.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1939.477 ; gain = 58.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1939.477 ; gain = 58.227
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1946.379 ; gain = 65.129
+close [ open C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_wsw.vhd w ]
+add_files C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_wsw.vhd
+update_compile_order -fileset sources_1
+close_design
+set_property top mux_4to1_wsw [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 24 01:58:41 2022] Launched synth_1...
+Run output will be captured here: C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: mux_4to1_wsw
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1946.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_4to1_wsw' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_wsw.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'mux_4to1_wsw' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_wsw.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1946.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.379 ; gain = 0.000
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1946.379 ; gain = 0.000
+close_design
+close [ open C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_ssas.vhd w ]
+add_files C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_ssas.vhd
+update_compile_order -fileset sources_1
+set_property top mux_4to1_ssas [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 24 02:28:30 2022] Launched synth_1...
+Run output will be captured here: C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: mux_4to1_ssas
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1946.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_4to1_ssas' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_ssas.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'mux_4to1_ssas' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_ssas.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1946.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1946.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1946.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1971.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1971.625 ; gain = 25.246
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1971.625 ; gain = 25.246
+close_design
+close [ open C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_we.vhd w ]
+add_files C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_we.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 24 02:53:30 2022] Launched synth_1...
+Run output will be captured here: C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: mux_4to1_ssas
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1971.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_4to1_ssas' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_ssas.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'mux_4to1_ssas' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_ssas.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1971.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1971.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1971.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1974.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1974.375 ; gain = 2.750
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1974.375 ; gain = 2.750
+set_property top mux_4to1_we [current_fileset]
+update_compile_order -fileset sources_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 24 02:55:07 2022] Launched synth_1...
+Run output will be captured here: C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: mux_4to1_we
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1974.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_4to1_we' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_we.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'mux_4to1_we' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_we.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1974.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1974.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1974.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2000.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2000.676 ; gain = 26.301
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2000.676 ; gain = 26.301
+close_design
+close [ open C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_iee.vhd w ]
+add_files C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_iee.vhd
+update_compile_order -fileset sources_1
+set_property top mux_4to1_iee [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 24 03:40:25 2022] Launched synth_1...
+Run output will be captured here: C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: mux_4to1_iee
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2000.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_4to1_iee' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_iee.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'mux_4to1_iee' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_iee.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2000.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2000.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2000.676 ; gain = 0.000
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2000.676 ; gain = 0.000
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: mux_4to1_iee
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2000.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_4to1_iee' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_iee.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'mux_4to1_iee' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_iee.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2000.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2000.676 ; gain = 0.000
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2000.676 ; gain = 0.000
+close_design
+close [ open C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to_case.vhd w ]
+add_files C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to_case.vhd
+update_compile_order -fileset sources_1
+set_property top mux_4to_case [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 24 03:54:46 2022] Launched synth_1...
+Run output will be captured here: C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: mux_4to_case
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2018.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_4to_case' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to_case.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'mux_4to_case' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to_case.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2018.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2018.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2018.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2019.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2019.156 ; gain = 0.406
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 2019.156 ; gain = 0.406
+close_design
+close [ open C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_sd.vhd w ]
+add_files C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_sd.vhd
+update_compile_order -fileset sources_1
+set_property top mux_4to1_sd [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 24 04:20:59 2022] Launched synth_1...
+Run output will be captured here: C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: mux_4to1_sd
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2056.152 ; gain = 13.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mux_4to1_sd' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_sd.vhd:17]
+INFO: [Synth 8-3491] module 'mux_2to1_ssas' declared at 'C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_2to1_ssas.vhd:7' bound to instance 'inst_1' of component 'mux_2to1_ssas' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_sd.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'mux_2to1_ssas' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_2to1_ssas.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'mux_2to1_ssas' (1#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_2to1_ssas.vhd:16]
+INFO: [Synth 8-3491] module 'mux_2to1_ssas' declared at 'C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_2to1_ssas.vhd:7' bound to instance 'inst_2' of component 'mux_2to1_ssas' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_sd.vhd:36]
+INFO: [Synth 8-3491] module 'mux_2to1_ssas' declared at 'C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_2to1_ssas.vhd:7' bound to instance 'inst_3' of component 'mux_2to1_ssas' [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_sd.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'mux_4to1_sd' (2#1) [C:/Users/usuario/Desktop/CURSO_FPGA/mux/mux.srcs/sources_1/new/mux_4to1_sd.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2056.172 ; gain = 13.875
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2056.188 ; gain = 13.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2056.188 ; gain = 13.891
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2128.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2128.844 ; gain = 86.547
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2128.844 ; gain = 86.547
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 24 04:37:18 2022...

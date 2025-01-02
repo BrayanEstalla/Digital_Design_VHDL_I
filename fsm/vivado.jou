@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul 21 12:07:13 2022
+# Process ID: 12316
+# Current directory: C:/Users/estal/OneDrive/Documentos/Documents_2022_04_03/VHDL_course_1/fsm
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25800 C:\Users\estal\OneDrive\Documentos\Documents_2022_04_03\VHDL_course_1\fsm\fsm.xpr
+# Log file: C:/Users/estal/OneDrive/Documentos/Documents_2022_04_03/VHDL_course_1/fsm/vivado.log
+# Journal file: C:/Users/estal/OneDrive/Documentos/Documents_2022_04_03/VHDL_course_1/fsm\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/estal/OneDrive/Documentos/Documents_2022_04_03/VHDL_course_1/fsm/fsm.xpr
+update_compile_order -fileset sources_1

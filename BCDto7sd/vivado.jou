@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 27 20:33:36 2022
+# Process ID: 15288
+# Current directory: C:/Users/usuario/Desktop/CURSO_FPGA/BCDto7sd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6160 C:\Users\usuario\Desktop\CURSO_FPGA\BCDto7sd\BCDto7sd.xpr
+# Log file: C:/Users/usuario/Desktop/CURSO_FPGA/BCDto7sd/vivado.log
+# Journal file: C:/Users/usuario/Desktop/CURSO_FPGA/BCDto7sd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/usuario/Desktop/CURSO_FPGA/BCDto7sd/BCDto7sd.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BCDto7_wsw [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+update_compile_order -fileset sources_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BCDto7sd_case [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+close_design

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 27 20:57:09 2022
+# Process ID: 13080
+# Current directory: C:/Users/usuario/Desktop/CURSO_FPGA/BCDto7sd/BCDto7sd.runs/synth_1
+# Command line: vivado.exe -log BCDto7sd_case.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BCDto7sd_case.tcl
+# Log file: C:/Users/usuario/Desktop/CURSO_FPGA/BCDto7sd/BCDto7sd.runs/synth_1/BCDto7sd_case.vds
+# Journal file: C:/Users/usuario/Desktop/CURSO_FPGA/BCDto7sd/BCDto7sd.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source BCDto7sd_case.tcl -notrace
